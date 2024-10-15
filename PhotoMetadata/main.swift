@@ -44,9 +44,9 @@ func main() {
     var photo2 = PhotoMetadata(aperture: aperture, shutterSpeed: shutterSpeed, iso: iso)
     photo2.setDescription(description: description)
     
-    print("The first photo metadata is \(photo1.aperture) aperture, \(photo1.shutterSpeed) sec, \(photo1.iso) ISO, \(photo1.ev) EV, and \(photo1.lux) lux. The photo's description is \"\(photo1.description)\".")
+    print("The first photo metadata is \(photo1.aperture) aperture, \(photo1.shutterSpeed) sec, \(photo1.iso) ISO, \(String(format: "%.2f", photo1.ev)) EV, and \(String(format: "%.2f", photo1.lux)) lux. The photo's description is \"\(photo1.description)\".")
     
-    print("The second photo metadata is \(photo2.aperture) aperture, \(photo2.shutterSpeed) sec, \(photo2.iso) ISO, \(photo2.ev) EV, and \(photo2.lux) lux. The photo's description is \"\(photo2.description)\".")
+    print("The second photo metadata is \(photo2.aperture) aperture, \(photo2.shutterSpeed) sec, \(photo2.iso) ISO, \(String(format: "%.2f", photo2.ev)) EV, and \(String(format: "%.2f", photo2.lux)) lux. The photo's description is \"\(photo2.description)\".")
 }
 
 main()
