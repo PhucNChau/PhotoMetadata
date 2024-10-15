@@ -1,5 +1,6 @@
 import Foundation
 
+// Function converts fraction string to double
 func convertShutterSpeedToDouble(number: String) -> Double {
     var result: Double = 0
     if number.contains("/") {
@@ -16,8 +17,6 @@ func convertShutterSpeedToDouble(number: String) -> Double {
 }
 
 func main() {
-//    var photo = PhotoMetadata(aperture: 4.0, shutterSpeed: 1/4000, iso: 200)
-//    photo.setDescription(description: "a photo of mountain")
     
     print("Please enter the first photo metadata.")
     print("What is the aperture of the photo?")
